@@ -14,7 +14,6 @@ const config: Config = {
   url: 'https://arklab-seniorproject.github.io/',
   baseUrl: '/ArkLab-Status/',
 
-
   organizationName: 'ArkLab-SeniorProject',
   projectName: 'ArkLab-Status',
   deploymentBranch: 'gh-pages',
