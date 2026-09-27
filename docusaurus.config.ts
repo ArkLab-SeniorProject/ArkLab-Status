@@ -14,8 +14,10 @@ const config: Config = {
   url: 'https://ark-lab.github.io',
   baseUrl: '/',
 
-  organizationName: 'ark-lab',
-  projectName: 'aftermath',
+
+  organizationName: 'ArkLab-SeniorProject',
+  projectName: 'ArkLab-Status',
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
 
@@ -67,15 +69,6 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
-        {
-          title: 'Status Posts',
-          items: [
-            {
-              label: 'All Posts',
-              to: '/docs/intro',
-            },
-          ],
-        },
         {
           title: 'Resources',
           items: [
