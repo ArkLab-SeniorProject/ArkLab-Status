@@ -11,8 +11,8 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://ark-lab.github.io',
-  baseUrl: '/',
+  url: 'https://arklab-seniorproject.github.io/',
+  baseUrl: '/ArkLab-Status/',
 
 
   organizationName: 'ArkLab-SeniorProject',
