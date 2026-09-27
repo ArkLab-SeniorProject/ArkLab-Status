@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 import styles from './index.module.css';
 
@@ -62,6 +63,8 @@ const teamMembers = [
     image: '/img/Mack.png',
   },
 ];
+
+const imageUrl = (image: string) => useBaseUrl(image);
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -144,7 +147,7 @@ function TeamSection() {
           {teamMembers.map((member) => (
             <div key={member.name} className={styles.memberCard}>
               <img
-                src={member.image}
+                src={imageUrl(member.image)}
                 alt={member.name}
                 className={styles.memberImage}
               />
