@@ -25,6 +25,8 @@ const config: Config = {
     locales: ['en'],
   },
 
+  themes: [['cosmos-docusaurus-theme', {injectFavicon: false}]],
+
   presets: [
     [
       'classic',
@@ -43,6 +45,7 @@ const config: Config = {
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
     colorMode: {
+      defaultMode: 'dark',
       respectPrefersColorScheme: true,
     },
     navbar: {
