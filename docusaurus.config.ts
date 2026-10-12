@@ -3,9 +3,9 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Aftermath',
+  title: 'Project Status - Aftermath',
   tagline: 'What do you do in the Aftermath?',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/AftermathLogo.png',
 
   future: {
     v4: true,
@@ -80,7 +80,7 @@ const config: Config = {
             },
             {
               label: 'Live Site',
-              href: 'https://aftermath-ui.vercel.app/',
+              href: 'https://intheaftermath.vercel.app/',
             },
           ],
         },

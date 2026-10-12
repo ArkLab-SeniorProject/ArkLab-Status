@@ -10,10 +10,10 @@ import styles from './index.module.css';
 
 const statusPosts = [
   {
-    title: 'Week 1: Project Kickoff',
-    description: 'Defining the core vision and assigning roles.',
+    title: 'Post 1: Project Kickoff',
+    description: 'Defining the core vision and getting the project off the ground with initial research and planning.',
     to: '/docs/week-1',
-    image: '/img/Post-1/Pitch.png',
+    image: '/img/Post-1/Cover.jpg',
   },
 ];
 
