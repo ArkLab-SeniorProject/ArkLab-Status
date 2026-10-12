@@ -45,7 +45,7 @@ const config: Config = {
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
     colorMode: {
-      defaultMode: 'dark',
+      defaultMode: 'light',
       respectPrefersColorScheme: true,
     },
     navbar: {
@@ -75,7 +75,7 @@ const config: Config = {
           title: 'Resources',
           items: [
             {
-              label: 'GitHub',
+              label: 'Aftermath GitHub',
               href: 'https://github.com/ArkLab-SeniorProject/Aftermath',
             },
             {
