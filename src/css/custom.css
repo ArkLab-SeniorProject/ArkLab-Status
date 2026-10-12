@@ -2,3 +2,147 @@
  * Any CSS included here will be global and layered on top of
  * cosmos-docusaurus-theme. Add site-specific overrides below.
  */
+
+:root {
+    --ifm-color-primary: #2563a6;
+    --ifm-color-primary-dark: #205891;
+    --ifm-color-primary-darker: #1e5388;
+    --ifm-color-primary-darkest: #18446f;
+    --ifm-color-primary-light: #3978b8;
+    --ifm-color-primary-lighter: #467fbc;
+    --ifm-color-primary-lightest: #6d9dce;
+    --ifm-background-color: #ffffff;
+    --ifm-background-surface-color: #ffffff;
+    --ifm-card-background-color: #fffdf8;
+    --ifm-font-color-base: #263746;
+    --ifm-font-color-secondary: #ffffff;
+    --ifm-color-emphasis-100: #fff8e8;
+    --ifm-color-emphasis-200: #ffefc2;
+    --ifm-color-emphasis-300: #f6d993;
+    --ifm-color-emphasis-700: #536273;
+    --ifm-global-shadow-lw: 0 4px 14px rgb(37 99 166 / 12%);
+    --ifm-global-shadow-md: 0 8px 24px rgb(37 99 166 / 16%);
+}
+
+html,
+body {
+    background: #ffffff;
+}
+
+body {
+    color: var(--ifm-font-color-base);
+}
+
+a {
+    color: var(--ifm-color-primary);
+}
+
+a:hover {
+    color: var(--ifm-color-primary-dark);
+}
+
+.navbar {
+    background: #ffffff;
+    border-bottom: 3px solid #f6c453;
+}
+
+.navbar__link--active,
+.navbar__link:hover {
+    color: var(--ifm-color-primary);
+}
+
+.hero--primary {
+    background: linear-gradient(135deg, #4B7FF9 0%, #ffe2b5 55%, #d97706 100%);
+    color: #263746;
+}
+
+.hero__title,
+.hero__subtitle {
+    color: #263746;
+}
+
+
+.footer {
+    background: #d97706;
+}
+
+.footer .footer__title,
+.footer .footer__link-item,
+.footer .footer__copyright {
+    color: #ffffff !important;
+}
+
+.footer .footer__link-item:hover {
+    color: #ffdf72;
+    opacity: 1;
+}
+
+.button--primary {
+    background: var(--ifm-color-primary);
+    border-color: var(--ifm-color-primary);
+}
+
+.button--primary:hover {
+    background: var(--ifm-color-primary-dark);
+    border-color: var(--ifm-color-primary-dark);
+}
+
+.theme-doc-markdown h1,
+.theme-doc-markdown h2,
+.theme-doc-markdown h3 {
+    color: #d97706;
+}
+
+[data-theme='dark'] {
+    --ifm-background-color: #17212b;
+    --ifm-background-surface-color: #202d39;
+    --ifm-card-background-color: #243442;
+    --ifm-font-color-base: #f5f7fa;
+    --ifm-font-color-secondary: #dce6ef;
+    --ifm-color-emphasis-100: #253747;
+    --ifm-color-emphasis-200: #395064;
+    --ifm-color-emphasis-300: #59728a;
+    --ifm-color-emphasis-700: #dce6ef;
+    --ifm-color-primary: #8fc7ff;
+    --ifm-color-primary-dark: #b4dcff;
+    --ifm-color-primary-darker: #c6e5ff;
+    --ifm-color-primary-darkest: #dceeff;
+    --ifm-color-primary-light: #6eb5f5;
+    --ifm-color-primary-lighter: #a7d5ff;
+    --ifm-color-primary-lightest: #d0e9ff;
+}
+
+html[data-theme='dark'],
+html[data-theme='dark'] body {
+    background: #17212b;
+}
+
+[data-theme='dark'] .navbar {
+    background: #202d39;
+    border-bottom-color: #f6c453;
+}
+
+[data-theme='dark'] .navbar__link--active,
+[data-theme='dark'] .navbar__link:hover {
+    color: #ffdf72;
+}
+
+[data-theme='dark'] .hero--primary {
+    background: linear-gradient(135deg, #254e73 0%, #8a5c26 100%);
+    color: #ffffff;
+}
+
+[data-theme='dark'] .hero__title,
+[data-theme='dark'] .hero__subtitle {
+    color: #ffffff;
+}
+
+[data-theme='dark'] .footer {
+    background: #d97706;
+}
+
+[data-theme='dark'] .theme-doc-markdown h1,
+[data-theme='dark'] .theme-doc-markdown h2,
+[data-theme='dark'] .theme-doc-markdown h3 {
+    color: #ffcf5a;
+}

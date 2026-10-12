@@ -13,6 +13,7 @@ const statusPosts = [
     title: 'Week 1: Project Kickoff',
     description: 'Defining the core vision and assigning roles.',
     to: '/docs/week-1',
+    image: '/img/Post-1/Pitch.png',
   },
 ];
 
@@ -22,7 +23,7 @@ const teamMembers = [
     role1: 'Project Manager',
     role2: 'Design and Development Support',
     instagram: '@hannah_dez_',
-    image: '/img/Hannah.png',
+    image: '/img/Home/Hannah.png',
   },
   {
     name: 'Olivia Knestaut',
@@ -30,14 +31,14 @@ const teamMembers = [
     role2: 'Data Architect',
     role3: 'Assistant Project Manager',
     instagram: '@ollywhelmed',
-    image: '/img/Olivia.png',
+    image: '/img/Home/Olivia.png',
   },
   {
     name: 'Tiffany Khuu',
     role1: 'Lead Data Architect',
     role2: 'Full Stack Developer',
     instagram: '@',
-    image: '/img/AftermathLogo.png',
+    image: '/img/Home/Tiffany.png',
   },
   {
     name: 'Amy Au',
@@ -45,14 +46,14 @@ const teamMembers = [
     role2: 'Researcher',
     role3: 'Content and Copy Support',
     instagram: '@amyau_',
-    image: '/img/AftermathLogo.png',
+    image: '/img/Home/Amy.png',
   },
   {
     name: 'Maple Tieu',
     role1: 'Lead Designer - UI',
     role2: 'Content and Copy Writer',
     instagram: '@_queenmaple_',
-    image: '/img/AftermathLogo.png',
+    image: '/img/Home/Maple.png',
   },
   {
     name: 'Mack Addison',
@@ -60,7 +61,7 @@ const teamMembers = [
     role2: 'Content and Copy Writer',
     role3: 'Design and Development Support',
     instagram: '@hello_jokii',
-    image: '/img/Mack.png',
+    image: '/img/Home/Mack.png',
   },
 ];
 
@@ -94,6 +95,11 @@ function StatusPostsSection() {
         <div className={styles.cardsGrid}>
           {statusPosts.map((post) => (
             <Link key={post.to} to={post.to} className={styles.card}>
+              <img
+                src={imageUrl(post.image)}
+                alt={`${post.title} cover image`}
+                className={styles.cardImage}
+              />
               <Heading as="h3">{post.title}</Heading>
               <p>{post.description}</p>
             </Link>
@@ -110,20 +116,14 @@ function ProjectOverviewSection() {
       <div className="container">
         <div className="row">
           <div className="col col--12">
-            <Heading as="h2" className={styles.sectionTitle}>
-              Project Overview
+            <Heading as="h1" className={styles.sectionTitle}>
+              What do you do in the Aftermath?
             </Heading>
             <p className={styles.overviewText}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat.
+              After a natural disaster, people are often left to navigate a complex recovery process while dealing with stress, uncertainty, and disrupted access to their normal resources. Important information like housing, insurance, and community assistance can be scattered across different sources, making it difficult to understand what needs to be done and when.
             </p>
             <p className={styles.overviewText}>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.
+              <b>Aftermath is a guided mobile-focused disaster-recovery web-app</b> that helps people organize, understand, and navigate the many steps that come after a natural disaster.
             </p>
           </div>
         </div>
@@ -139,7 +139,7 @@ function TeamSection() {
         <div className="row">
           <div className="col col--12">
             <Heading as="h2" className={styles.sectionTitle}>
-              Ark Lab Members
+              Ark Labs Members
             </Heading>
           </div>
         </div>
