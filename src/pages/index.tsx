@@ -12,7 +12,7 @@ const statusPosts = [
   {
     title: 'Post 1: Project Kickoff',
     description: 'Defining the core vision and getting the project off the ground with initial research and planning.',
-    to: '/docs/week-1',
+    to: '/docs/post-1',
     image: '/img/Post-1/Cover.jpg',
   },
 ];
@@ -37,7 +37,7 @@ const teamMembers = [
     name: 'Tiffany Khuu',
     role1: 'Lead Data Architect',
     role2: 'Full Stack Developer',
-    instagram: '@',
+    instagram: '@tiffany_khuu',
     image: '/img/Home/Tiffany.png',
   },
   {
