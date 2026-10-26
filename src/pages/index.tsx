@@ -15,6 +15,12 @@ const statusPosts = [
     to: '/docs/post-1',
     image: '/img/Post-1/Cover.jpg',
   },
+  {
+    title: 'Post 2: After Aftermath',
+    description: 'Defining the core vision and getting the project off the ground with initial research and planning.',
+    to: '/docs/post-2',
+    image: '/img/Post-1/Cover.jpg',
+  },
 ];
 
 const teamMembers = [
