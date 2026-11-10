@@ -5,7 +5,26 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Project Status - Aftermath',
   tagline: 'What do you do in the Aftermath?',
-  favicon: 'img/AftermathLogo.png',
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        type: 'image/png',
+        href: '/ArkLab-Status/img/Aftermath-Logo-Light.png',
+        media: '(prefers-color-scheme: light)',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        type: 'image/png',
+        href: '/ArkLab-Status/img/Aftermath-Logo-Dark.png',
+        media: '(prefers-color-scheme: dark)',
+      },
+    },
+  ],
 
   future: {
     v4: true,
@@ -52,7 +71,8 @@ const config: Config = {
       title: 'Aftermath',
       logo: {
         alt: 'Aftermath Logo',
-        src: 'img/AftermathLogo.png',
+        src: 'img/Aftermath-Logo-Light.png',
+        srcDark: 'img/Aftermath-Logo-Dark.png',
       },
       items: [
         {

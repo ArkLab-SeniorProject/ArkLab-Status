@@ -3,23 +3,28 @@
  * cosmos-docusaurus-theme. Add site-specific overrides below.
  */
 
-:root {
-    --ifm-color-primary: #2563a6;
-    --ifm-color-primary-dark: #205891;
-    --ifm-color-primary-darker: #1e5388;
-    --ifm-color-primary-darkest: #18446f;
-    --ifm-color-primary-light: #3978b8;
-    --ifm-color-primary-lighter: #467fbc;
-    --ifm-color-primary-lightest: #6d9dce;
+html:root {
+  --cosmos-brand: #042A3D;
+  --cosmos-brand-rgb: 4, 42, 61;
+  --cosmos-brand-light: #CDE5F2;
+  --cosmos-brand-light-rgb: 205, 229, 242;
+
+    --ifm-color-primary: #12628A;
+    --ifm-color-primary-dark: #0B4A68;
+    --ifm-color-primary-darker: #063A54;
+    --ifm-color-primary-darkest: #042A3D;
+    --ifm-color-primary-light: #1F7AA8;
+    --ifm-color-primary-lighter: #4296C2;
+    --ifm-color-primary-lightest: #72B3D5;
     --ifm-background-color: #ffffff;
     --ifm-background-surface-color: #ffffff;
-    --ifm-card-background-color: #fffdf8;
-    --ifm-font-color-base: #263746;
+    --ifm-card-background-color: #CDE5F2;
+    --ifm-font-color-base: #021A26;
     --ifm-font-color-secondary: #ffffff;
-    --ifm-color-emphasis-100: #fff8e8;
-    --ifm-color-emphasis-200: #ffefc2;
-    --ifm-color-emphasis-300: #f6d993;
-    --ifm-color-emphasis-700: #536273;
+    --ifm-color-emphasis-100: #EAF4F9;
+    --ifm-color-emphasis-200: #DDE8F6;
+    --ifm-color-emphasis-300: #E3E4FA;
+    --ifm-color-emphasis-700: #0B4A68;
     --ifm-global-shadow-lw: 0 4px 14px rgb(37 99 166 / 12%);
     --ifm-global-shadow-md: 0 8px 24px rgb(37 99 166 / 16%);
 }
@@ -43,7 +48,7 @@ a:hover {
 
 .navbar {
     background: #ffffff;
-    border-bottom: 3px solid #f6c453;
+    border-bottom: 3px solid #1F7AA8;
 }
 
 .navbar__link--active,
@@ -52,7 +57,7 @@ a:hover {
 }
 
 .hero--primary {
-    background: linear-gradient(135deg, #4B7FF9 0%, #ffe2b5 55%, #d97706 100%);
+    background: linear-gradient(135deg, #72B3D5 0%, #CDE5F2 55%, #EAF4F9 100%);
     color: #263746;
 }
 
@@ -63,7 +68,7 @@ a:hover {
 
 
 .footer {
-    background: #d97706;
+    background: #0B4A68;
 }
 
 .footer .footer__title,
@@ -73,30 +78,32 @@ a:hover {
 }
 
 .footer .footer__link-item:hover {
-    color: #ffdf72;
+    color: #A3CFE6;
     opacity: 1;
 }
 
-.button--primary {
-    background: var(--ifm-color-primary);
-    border-color: var(--ifm-color-primary);
+html .btn-primary,
+html .button--primary {
+  background: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
 }
-
-.button--primary:hover {
-    background: var(--ifm-color-primary-dark);
-    border-color: var(--ifm-color-primary-dark);
+html .btn-primary:hover,
+html .button--primary:hover {
+  background: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-dark);
+  box-shadow: 0 0 0 3px rgb(var(--cosmos-brand-rgb) / 0.2);
 }
 
 .theme-doc-markdown h1,
 .theme-doc-markdown h2,
 .theme-doc-markdown h3 {
-    color: #d97706;
+    color: #12628A;
 }
 
-[data-theme='dark'] {
+html[data-theme='dark'] {
     --ifm-background-color: #17212b;
-    --ifm-background-surface-color: #202d39;
-    --ifm-card-background-color: #243442;
+    --ifm-background-surface-color: #042A3D;
+    --ifm-card-background-color: #0B4A68;
     --ifm-font-color-base: #f5f7fa;
     --ifm-font-color-secondary: #dce6ef;
     --ifm-color-emphasis-100: #253747;
@@ -119,17 +126,17 @@ html[data-theme='dark'] body {
 
 [data-theme='dark'] .navbar {
     background: #202d39;
-    border-bottom-color: #f6c453;
+    border-bottom-color: #8fc7ff;
 }
 
 [data-theme='dark'] .navbar__link--active,
 [data-theme='dark'] .navbar__link:hover {
-    color: #ffdf72;
+    color: #8fc7ff;
 }
 
 [data-theme='dark'] .hero--primary {
-    background: linear-gradient(135deg, #254e73 0%, #8a5c26 100%);
-    color: #ffffff;
+    background: linear-gradient(135deg, #042A3D 0%, #12628A 100%);
+    color: #8fc7ff;
 }
 
 [data-theme='dark'] .hero__title,
@@ -138,11 +145,11 @@ html[data-theme='dark'] body {
 }
 
 [data-theme='dark'] .footer {
-    background: #d97706;
+    background: #042A3D;
 }
 
 [data-theme='dark'] .theme-doc-markdown h1,
 [data-theme='dark'] .theme-doc-markdown h2,
 [data-theme='dark'] .theme-doc-markdown h3 {
-    color: #ffcf5a;
+    color: #A3CFE6;
 }
