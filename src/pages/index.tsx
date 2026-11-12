@@ -21,6 +21,12 @@ const statusPosts = [
     to: '/docs/post-2',
     image: '/img/Post-2/Cover.jpg',
   },
+  {
+    title: 'Post 3: Development Progress',
+    description: 'Building the core features of Aftermath and preparing for user testing and feedback.',
+    to: '/docs/post-3',
+    image: '/img/Post-3/Dev-Team.jpg',
+  }
 ];
 
 const teamMembers = [
