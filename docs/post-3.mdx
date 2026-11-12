@@ -9,21 +9,6 @@ image: /img/Post-3/Dev-Team.jpg
 
 ## Completed Tasks 
 
-### Develop Initial Stand in Flow
-
-**Olivia —  8 hrs** 
-
-- **Due Date** 11/11/2026 
-- **Description:** Code out stand in pages for one of the user flows. We chose the intake form user flow. It is not up to date wkth low-fi 
-- **Deliverable:** [Aftermath Live Site](https://www.intheaftermath.org/)
-
-**Takeaways**
-
-- Core flow and pages are set up for the main application
-- CSS updates need to be made to match low-fi screens 
-
-![Image of the initial intake page](/img/Post-3/screen-img.png)
-
 ### Connect Gmail SMTP to reset password flow 
 
 **Olivia —  2 hrs** 
@@ -42,17 +27,21 @@ image: /img/Post-3/Dev-Team.jpg
 
 ### API Connections 
 
-**Tiff — 8 hrs** 
+**Tiff — 14 hrs** 
 
 - **Due Date** 11/4/2026 
-- **Description:** Connected all APIs (OpenFEMA, Socrata, NWS, Census Geocoder) to the data-access backend as separate TypeScript services. Each one was tested from the terminal. 
-- **Deliverable:** [API Progress Git Commits](https://github.com/ArkLab-SeniorProject/Aftermath/pull/58/commits) 
+- **Description:** Connected all APIs (OpenFEMA, Socrata, NWS, Census Geocoder) to the data-access backend as separate TypeScript services. Each one was tested from the terminal. Then connected APIs onto the recovery quiz flow for disaster and location-based questions. 
+- **Deliverable:** [Live Site](https://www.intheaftermath.org/) 
 
 **Takeaways** 
 
 - Census Geocoder cannot look up a ZIP code by itself, so we need to download their ZCTA file which lists every ZIP code with a center point (latitude/longitude) and upload this file onto Mongo or as a JSON. 
 - Socrata is not a Nationwide API, as some cities do not use Socrata at all. A discovery script was built to find which cities publish datasets. 
 - Public APIs can be slow; one public Overpass server was overloaded, so automatic switching to a backup server was added. 
+- Guests can save without an account. Each guest gets a private token, and the database stores only a scrambled (hashed) copy of it. If the guest signs up or logs in later, their answers move to their new account 
+- Entering only a ZIP code will locate a county. Users that enter an address will have a more precise location. 
+
+![API Questions](/img/Post-3/screen-img.png)
 
 ### Page Structure and Connections for First Critical Flow 
 
@@ -60,7 +49,7 @@ image: /img/Post-3/Dev-Team.jpg
 
 - **Due Date** 11/9/2026 
 - **Description:** Based on the site map and wire frames begin the dev page set up and flow on the front end side. 
-- **Deliverable:** [Page Structure Pull Request](https://github.com/ArkLab-SeniorProject/Aftermath/pull/57) 
+- **Deliverable:** [Page Structure on Live Site](https://www.intheaftermath.org/) 
 
 **Takeaways** 
 
@@ -145,19 +134,6 @@ image: /img/Post-3/Dev-Team.jpg
 - Need to test with users in Mid-fi to narrow down imagery direction
 
 ![Aftermath Style Guide](/img/Post-3/branding-img.png) 
-
-### API Connections to Questions 
-
-**Tiff — 6 hrs** 
-
-- **Due Date** 11/11/2026 
-- **Description:** Connect APIs onto the recovery quiz flow for disaster and location-based questions. 
-- **Deliverable:** [API Progress Commits](https://github.com/ArkLab-SeniorProject/Aftermath/pull/58/commits) 
-
-**Takeaways** 
-
-- Guests can save without an account. Each guest gets a private token, and the database stores only a scrambled (hashed) copy of it. If the guest signs up or logs in later, their answers move to their new account 
-- Entering only a ZIP code will locate a county. Users that enter an address will have a more precise location. 
 
 ### Content Development Documentation 
 
