@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Project Status - Aftermath',
-  tagline: 'What do you do in the Aftermath?',
+  title: 'Aftermath',
+  tagline: 'Project Status',
   headTags: [
     {
       tagName: 'link',

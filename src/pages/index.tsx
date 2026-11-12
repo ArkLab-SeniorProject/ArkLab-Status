@@ -5,6 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import {useColorMode} from '@docusaurus/theme-common';
 
 import styles from './index.module.css';
 
@@ -81,9 +82,18 @@ const imageUrl = (image: string) => useBaseUrl(image);
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
+  const {colorMode} = useColorMode();
+  const logo = colorMode === 'dark'
+    ? '/img/AftermathLogoDark.svg'
+    : '/img/AftermathLogoLight.svg';
+
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
+        <img
+          src={imageUrl(logo)}
+          alt="Aftermath Logo"
+        />
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>

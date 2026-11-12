@@ -67,11 +67,13 @@ a:hover {
 
 .hero--primary {
   background: #EAF4F9;
-  color: #263746;
+  color: #04496A;
   border: none;
 }
 
-.hero__title,
+.hero__title{
+  color: #04496A;
+}
 .hero__subtitle {
   color: #263746;
 }
@@ -186,10 +188,12 @@ html[data-theme='dark'] body {
 
 [data-theme='dark'] .hero--primary {
   background: #163d4d;
-  color: #edf7f8;
+  color: #CDE5F2;
 }
 
-[data-theme='dark'] .hero__title,
+[data-theme='dark'] .hero__title {
+  color: #CDE5F2;
+}
 [data-theme='dark'] .hero__subtitle {
   color: #edf7f8;
 }
