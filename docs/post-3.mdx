@@ -3,7 +3,7 @@ sidebar_position: 3
 image: /img/Post-3/Dev-Team.jpg
 ---
 
-# Post 3: Gearing up for Dev Team 
+# Post 3: Gearing up for Development 
 
 ![Post 3 status post cover](/img/Post-3/Dev-Team.jpg) 
 
@@ -15,18 +15,21 @@ image: /img/Post-3/Dev-Team.jpg
 
 - **Due Date** 11/4/2026 
 - **Description:** Look into and implement Email SMTP for password recovery and log in purposes. 
-- **Deliverable:** [Aftermath Forgot Password Branch] (https://github.com/ArkLab-SeniorProject/Aftermath/pull/57) 
+- **Deliverable:** [Aftermath Forgot Password Branch](https://github.com/ArkLab-SeniorProject/Aftermath/pull/57) 
 
 **Takeaways** 
 
 - SMTP is connected to a free Gmail account  
-- Did not need something like SendGrid since we are not doing newsletters or other promotional emails 
+- Did not need something like SendGrid since we are not doing newsletters or other promotional emails
+
+![Password Reset Screen](/img/Post-3/reset-passwd-img.png) 
+
 
 ### API Connections 
 
 **Tiff — 8 hrs** 
 
--**Due Date** 11/4/2026 
+- **Due Date** 11/4/2026 
 - **Description:** Connected all APIs (OpenFEMA, Socrata, NWS, Census Geocoder) to the data-access backend as separate TypeScript services. Each one was tested from the terminal. 
 - **Deliverable:** [API Progress Git Commits](https://github.com/ArkLab-SeniorProject/Aftermath/pull/58/commits) 
 
@@ -35,15 +38,14 @@ image: /img/Post-3/Dev-Team.jpg
 - Census Geocoder cannot look up a ZIP code by itself, so we need to download their ZCTA file which lists every ZIP code with a center point (latitude/longitude) and upload this file onto Mongo or as a JSON. 
 - Socrata is not a Nationwide API, as some cities do not use Socrata at all. A discovery script was built to find which cities publish datasets. 
 - Public APIs can be slow; one public Overpass server was overloaded, so automatic switching to a backup server was added. 
-![Password Reset Screen](/img/Post-3/reset-passwd-img.png) 
 
 ### Page Structure and Connections for First Critical Flow 
 
-**Olivia — 4 hrs ** 
+**Olivia — 4 hrs** 
 
 - **Due Date** 11/9/2026 
 - **Description:** Based on the site map and wire frames begin the dev page set up and flow on the front end side. 
-- **Deliverable:** [Page Structure Pull Request] (https://github.com/ArkLab-SeniorProject/Aftermath/pull/57) 
+- **Deliverable:** [Page Structure Pull Request](https://github.com/ArkLab-SeniorProject/Aftermath/pull/57) 
 
 **Takeaways** 
 
@@ -51,36 +53,56 @@ image: /img/Post-3/Dev-Team.jpg
 - Pages exist but styling is temporary while style guide is finalized. 
 - Next step for this flow is the API tie ins to actually populate a guide  
 
+![Low Fi Developed Screens](/img/Post-3/low-fi-screenshots.png) 
+
+
+### Develop Low-fi Usability Testing Questions
+
+**Amy, Maple, Mack — 2 hrs** 
+
+- **Due Date** 11/06/2026 
+- **Description:** Establish how low-fidelity usability testing will be done and develop the questions that will be asked. 
+- **Deliverable:** [Low-fi Usability Interview Plan](https://drexel0.sharepoint.com/:w:/r/sites/27SrProj_Aftermath_16fd2c/_layouts/15/Doc.aspx?action=edit&sourcedoc=%7B389e9311-32c8-4c61-be7c-5cc6e2e82316%7D&wdExp=TEAMS-TREATMENT&web=1)
+
+**Takeaways** 
+
+- Aligned the test script with our core user flows to see if the basic layout and navigation make sense to users  
+- Included a mix of quantitative and qualitative questions, prioritizing qualitative feedback to capture deeper insights into user expectations and friction points 
+
 ### Low-Fidelity User Testing 
 
 **Amy, Maple, Mack — 5 hrs** 
 
--**Due Date** 11/06/2026 
+- **Due Date** 11/06/2026 
 - **Description:** Evaluating whether participants can understand and move through Aftermath’s core flows (minimum of 3 users to test with). 
-- **Deliverable:** [Page Structure Pull Request] (https://github.com/ArkLab-SeniorProject/Aftermath/pull/57) 
+- **Deliverable:** [Low-fi Usability Interview Plan](https://drexel0.sharepoint.com/:w:/r/sites/27SrProj_Aftermath_16fd2c/_layouts/15/Doc.aspx?action=edit&sourcedoc=%7B389e9311-32c8-4c61-be7c-5cc6e2e82316%7D&wdExp=TEAMS-TREATMENT&web=1)
 
 **Takeaways** 
 
--  
+- Validated that our core navigation makes sense to users, with most participants smoothly completing the core flows 
+- Consider interviewing with professors before the target users for any refinement suggestions  
+- Try to allot the appropriate time for the user testing as all testing ran over the 30-minute timeslot  
 
 ### Low-Fidelity Testing Report 
 
-**Amy, Mack — 4 hrs ** 
+**Amy, Mack — 5 hrs** 
 
--**Due Date** 11/08/2026 
+- **Due Date** 11/11/2026 
 - **Description:** Evaluating whether participants can understand and move through Aftermath’s core flows (minimum of 3 users to test with). 
-- **Deliverable:** [Lo-Fi Testing Report] (https://drexel0.sharepoint.com/:w:/r/sites/27SrProj_Aftermath_16fd2c/Shared%20Documents/Design%20and%20Research%20Hub/research-hub/lofi-research/research-lofi-usability-testing-summary-report.docx?d=wa5c13f533f964f22b8abfdbee291e57f&csf=1&web=1&e=2ukRpx) 
+- **Deliverable:** [Low-Fi Testing Report](https://drexel0.sharepoint.com/:w:/r/sites/27SrProj_Aftermath_16fd2c/Shared%20Documents/Design%20and%20Research%20Hub/research-hub/lofi-research/research-lofi-usability-testing-summary-report.docx?d=wa5c13f533f964f22b8abfdbee291e57f&csf=1&web=1&e=2ukRpx) 
 
 **Takeaways** 
 
-- Determine the timeline at which the user is meant to utilize Aftermath 
-- Deadline section is not accurate to how recovery after a natural disaster is like; will be removed as FEMA is the only deadline  
+- Confirmed that our core user flows work well overall, though there are some aspects of our design we need to look over 
+- Add a pathway for immediate help as there will be users who come into the platform assuming that they can receive immediate help through here 
+- Deadline section is not accurate to how recovery after a natural disaster is like; will be removed as FEMA is the only deadline 
+- Need to rename existing categories to better reflect their contents and add new ones, such as Utilities 
 
 ### Update Status Post Site CSS 
 
 **Hannah — 2hrs** 
 
--**Due Date** 11/10/2026 
+- **Due Date** 11/10/2026 
 - **Description:** Based on the branding and style guide, updated the status post site as well as the github and team's logos to match the Aftermath Brand.  
 - **Deliverable:** [Updated Site](https://arklab-seniorproject.github.io/ArkLab-Status/) 
 
@@ -88,15 +110,16 @@ image: /img/Post-3/Dev-Team.jpg
 
 - Once core imagery is decided between blocky elements and line motifs, update the background gradient and finalize update 
 - Figured out the docusaurus overrides and details in the code 
-![Image of the Redesigned Home Page](/img/Post-3/Status-Site-Redesign.png) 
 
- 
+![Image of the Redesigned Home Page](/img/Post-3/status-site-light.png) 
+
+![Image of the Redesigned Home Page](/img/Post-3/status-site-dark.png) 
 
 ### Brand Identity and Style Guide 
 
 **Amy, Mack, Maple — 10 hrs** 
 
--**Due Date** 11/11/2026 
+- **Due Date** 11/11/2026 
 - **Description:** Develop Aftermath’s brand identity, color ways, imagery, and typography. 
 - **Deliverable:** [Aftermath Brand Identity](https://www.figma.com/design/r9vE99soUQcvwyIalZ0bEq/SR-Aftermath?node-id=2141-4344&t=sHpoxrRGY5XJbEdT-1) 
 
@@ -104,16 +127,15 @@ image: /img/Post-3/Dev-Team.jpg
 
 - Established a brand identity that represents Aftermath 
 - Created two different imagery routes Aftermath can go down 
-- Need to test with users in Mid-fi to narrow down imagery direction 
-![Aftermath Style Guide](/img/Post-3/branding-img.png) 
+- Need to test with users in Mid-fi to narrow down imagery direction
 
- 
+![Aftermath Style Guide](/img/Post-3/branding-img.png) 
 
 ### API Connections to Questions 
 
 **Tiff — 6 hrs** 
 
--**Due Date** 11/11/2026 
+- **Due Date** 11/11/2026 
 - **Description:** Connect APIs onto the recovery quiz flow for disaster and location-based questions. 
 - **Deliverable:** [API Progress Commits](https://github.com/ArkLab-SeniorProject/Aftermath/pull/58/commits) 
 
@@ -124,9 +146,9 @@ image: /img/Post-3/Dev-Team.jpg
 
 ### Content Development Documentation 
 
-**Mack — 10 hrs ** 
+**Mack — 10 hrs** 
 
--**Due Date** 11/13/2026 
+- **Due Date** 11/13/2026 
 - **Description:**  Developing the framework for content development within Aftermath, including the database of guides and checklists and the content and filtering system for dev/design handoff.  
 - **Deliverable:** [Content Tracker](https://drexel0.sharepoint.com/:x:/r/sites/27SrProj_Aftermath_16fd2c/Shared%20Documents/Content%20and%20Copy%20Hub/content-tracker.xlsx?d=w3ec13f0a1dcd411291a167459ad7a322&csf=1&web=1&e=Xo1ZIi), [Content Filtering System](https://drexel0.sharepoint.com/:w:/r/sites/27SrProj_Aftermath_16fd2c/Shared%20Documents/Content%20and%20Copy%20Hub/content-sources-filter-system.docx?d=w59045b4a0fcb435288ac65d4e71cd423&csf=1&web=1&e=VgareR) 
 
@@ -134,67 +156,61 @@ image: /img/Post-3/Dev-Team.jpg
 
 - There were lots of unanswered questions about user and state changes that we had to go through as a team.  
 - It hasn't significantly affected our design but it has shifted it enough that it is maybe something we should have started earlier! However, we now have a system set up as well as a list of guides to work off for development of the content of the guides and the system, surrounding it.  
+
 ![Image Alt Tag](/img/Post-3/diagram-filter-matching.png) 
 ![Image Alt Tag](/img/Post-3/diagram-intake-flow.png) 
 
 ---
 
-## Open Tasks 
-
-### Task Name 
-
-**Name or Team** 
-
--**Due Date** 00/00/0000 
-- **Description:** Details 
+## Open Tasks  
 
 ### Develop Example Guide + Checklist 
 
 **Amy, Maple, Mack** 
 
--**Due Date** 11/14/2027 
+- **Due Date** 11/14/2027 
 - **Description:** Develop and example guide and checklist to be utilized within mid-fidelity testing. 
 
 ### Database Structure Updates 
 
-**Olivia — 6 hrs** 
+**Olivia** 
 
--**Due Date** 11/16/2026 
+- **Due Date** 11/16/2026 
 - **Description:** Update the Mongo DB Structure based on recovery and preparedness content needs and update GraphQL Structure to match. 
 
 ### Mid-Fidelity Prototype 
 
 **Amy, Maple** 
 
--**Due Date** 11/18/2027 
+- **Due Date** 11/18/2027 
 - **Description:** Complete the mid-fidelity prototypes for all three user flows. 
 
 ### Mid-Fidelity Question Development 
 
 **Amy, Maple, Mack** 
 
--**Due Date** 11/18/2027 
+- **Due Date** 11/18/2027 
 - **Description:** Establish how mid-fidelity usability testing will be done and develop the questions that will be asked. 
 
 ### Start Updating the Instagram Account 
 
 **Hannah** 
 
--**Due Date** 12/09/2026 
+- **Due Date** 12/09/2026 
 - **Description:** Make a meet the team post, and parse through other post ideas that could work well on a team Instagram. 
 
 ### Set up the Figma MCP with Claude Code 
 
-**Hannah and Liv** 
+**Hannah, Liv** 
 
--**Due Date** 12/09/2026 
-- **Description:** Set up the Claude Code to match with a Figma MCP so that when coding and using Claude code, it has all of the context of our designs. This may require us to stop mooching off of Macks Claude Premium and get a Group Claude for the project.  
+- **Due Date** 12/09/2026 
+- **Description:** Set up the Claude Code to match with a Figma MCP so that when coding and using Claude code, it has all of the context of our designs.
 
-### Look into potential areas for Micro Interactions 
+### Look into Potential Areas for Microinteractions 
 
 **Hannah** 
 
--**Due Date** 01/04/2027 
+- **Due Date** 01/04/2027 
 - **Description:** Start parsing through the core design flows and pick out where interactions may improve users experience. 
 
 ---
@@ -205,28 +221,28 @@ image: /img/Post-3/Dev-Team.jpg
 
 **Olivia, Hannah** 
 
--**Due Date** 11/19/2026 
+- **Due Date** 11/19/2026 
 - **Description:** Create a detailed DESIGN.md document based on the styles in Figma and use it to create a theme for Material Design Components in the code base. 
 
 ### Create and Connect Screens for Preparedness Flow 
 
-**Olivia — 4 hrs** 
+**Olivia, Tiff — 4 hrs** 
 
--**Due Date** 11/24/2026 
+- **Due Date** 11/24/2026 
 - **Description:** Create the preparedness quiz, similar to the recovery quiz and ensure the values are also saved and populated when logged in. 
 
 ### Create Q1 Final Presentation 
 
 **All Hands** 
 
--**Due Date** 12/09/2026 
+- **Due Date** 12/09/2026 
 - **Description:** Create and practice for the final presentation of progress after one quarter of work 
 
 ### Mid-Fidelity Usability Test 
 
 **Amy, Maple, Mack** 
 
--**Due Date** 11/25/2027 
+- **Due Date** 11/25/2027 
 - **Description:** Further validating whether participants can understand and move through Aftermath’s core flows and branding (minimum of 3 users to test with). 
 
 ---
